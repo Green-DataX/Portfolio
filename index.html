@@ -3,46 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Hamza Slama</title>
+    <title>Hamza Slama - Ingénieur Data Analyst</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #007BFF;
             color: white;
-            padding: 20px 0;
+            padding: 40px 20px;
             text-align: center;
         }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
         main {
-            margin: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
         }
         section {
             margin-bottom: 30px;
         }
-        h1, h2 {
-            color: #4CAF50;
+        h2 {
+            color: #007BFF;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
-        li {
+        ul li {
             margin-bottom: 10px;
+        }
+        .skills-grid, .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .skill-card, .experience-card {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
             margin-top: 30px;
-            padding: 10px 0;
+            padding: 20px 0;
             background-color: #333;
             color: white;
         }
         a {
-            color: #4CAF50;
+            color: #007BFF;
             text-decoration: none;
         }
         a:hover {
@@ -53,57 +78,82 @@
 <body>
     <header>
         <h1>Hamza Slama</h1>
-        <p>Data Scientist | Data Analyst</p>
+        <p>Ingénieur Data Analyst & Mesure PV - Engie Green</p>
     </header>
     <main>
         <section>
             <h2>À propos de moi</h2>
             <p>
-                Data Scientist et Data Analyst avec une expertise en analyse de données, développement de modèles de machine learning, 
-                et création de tableaux de bord interactifs. Actuellement en alternance chez 8.2 France, 
-                je suis passionné par l'optimisation des performances grâce à la data.
+                Ingénieur Data Analyst passionné par les énergies renouvelables et les solutions basées sur la donnée, 
+                avec une expertise dans l'analyse des performances photovoltaïques, l'optimisation des processus, 
+                et le développement d'outils de visualisation interactifs.
             </p>
         </section>
         <section>
             <h2>Compétences</h2>
-            <ul>
-                <li><strong>Langages de programmation :</strong> Python, R, SQL, Julia</li>
-                <li><strong>Outils de visualisation :</strong> Power BI, Tableau</li>
-                <li><strong>Gestion de données :</strong> PostgreSQL, MySQL, Talend (ETL), Apache Airflow</li>
-                <li><strong>Modélisation :</strong> Machine Learning, Régression, Clustering</li>
-                <li><strong>Cloud :</strong> AWS, Microsoft Azure</li>
-            </ul>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Analyse & Visualisation</h3>
+                    <ul>
+                        <li>Python, R, SQL</li>
+                        <li>Power BI, Tableau</li>
+                        <li>Analyse SCADA</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Gestion de Données</h3>
+                    <ul>
+                        <li>PostgreSQL, MySQL</li>
+                        <li>ETL : Talend, Apache Airflow</li>
+                        <li>Cloud : AWS, Azure</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Modélisation</h3>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Régression, Clustering</li>
+                        <li>XGBoost, Scikit-Learn</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Expériences</h2>
-            <h3>Data Scientist (Alternance) - 8.2 France</h3>
-            <p>Octobre 2023 - Septembre 2024</p>
-            <ul>
-                <li>Analyse des données SCADA en Python et SQL pour optimiser les performances des éoliennes.</li>
-                <li>Développement d’un modèle Machine Learning pour détecter les anomalies dans les courbes de puissance.</li>
-                <li>Création de tableaux de bord et reporting automatisé avec Power BI.</li>
-                <li>Mise en place de processus ETL pour l'intégration de nouvelles données.</li>
-            </ul>
-
-            <h3>Data Scientist (Stage) - INRAE Occitanie</h3>
-            <p>Janvier 2023 - Juin 2023</p>
-            <ul>
-                <li>Analyse des données météorologiques d’EDF avec Python.</li>
-                <li>Développement d’un modèle de prévision des impacts climatiques sur les centrales nucléaires.</li>
-                <li>Gestion et extraction de données avec PostgreSQL.</li>
-            </ul>
-
-            <h3>Data Analyst (Stage) - SMART AUTO</h3>
-            <p>Juin 2022 - Août 2022</p>
-            <ul>
-                <li>Création de visualisations interactives avec Power BI pour faciliter la prise de décision.</li>
-                <li>Transformation de données avec Talend.</li>
-            </ul>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Ingénieur Data Analyst & Mesure PV</h3>
+                    <p><strong>Engie Green</strong> | Octobre 2023 - Présent</p>
+                    <ul>
+                        <li>Analyse des données photovoltaïques pour optimiser les performances.</li>
+                        <li>Création de tableaux de bord dynamiques pour le suivi des indicateurs clés.</li>
+                        <li>Intégration et transformation de données issues de multiples sources.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>Data Scientist (Alternance)</h3>
+                    <p><strong>8.2 France</strong> | Octobre 2022 - Septembre 2023</p>
+                    <ul>
+                        <li>Analyse des données SCADA en Python et SQL.</li>
+                        <li>Développement d'un modèle ML pour détecter les anomalies des éoliennes.</li>
+                        <li>Mise en place de processus ETL pour des pipelines de données robustes.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>Data Scientist (Stage)</h3>
+                    <p><strong>INRAE Occitanie</strong> | Janvier 2023 - Juin 2023</p>
+                    <ul>
+                        <li>Développement d’un modèle prévisionnel pour évaluer les impacts climatiques.</li>
+                        <li>Gestion des données EDF avec PostgreSQL.</li>
+                        <li>Utilisation de Julia et Python pour des analyses avancées.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Formations</h2>
             <ul>
-                <li><strong>Master en Statistiques pour l'Information et l'Aide à la Décision</strong> (IAE de Montpellier) | 2023-2024</li>
+                <li><strong>Master en Statistiques pour l'Information et l'Aide à la Décision</strong> (IAE Montpellier) | 2023-2024</li>
                 <li><strong>Master en Statistiques et Sciences des Données</strong> (Université de Montpellier) | 2022-2024</li>
             </ul>
         </section>
@@ -111,13 +161,13 @@
             <h2>Contact</h2>
             <ul>
                 <li><strong>Téléphone :</strong> (+33) 07.74.86.16.99</li>
-                <li><strong>Email :</strong> hamzaslama101@gmail.com</li>
-                <li><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/hamza-slama-LinkedIn">hamza-slama-LinkedIn</a></li>
+                <li><strong>Email :</strong> <a href="mailto:hamzaslama101@gmail.com">hamzaslama101@gmail.com</a></li>
+                <li><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/hamza-slama-LinkedIn">linkedin.com/in/hamza-slama</a></li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>© 2024 Hamza Slama - Tous droits réservés</p>
+        <p>© 2024 Hamza Slama | Portfolio Professionnel</p>
     </footer>
 </body>
 </html>

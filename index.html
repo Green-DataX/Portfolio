@@ -3,9 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio | Hamza</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-item {
+            flex: 1 1 calc(50% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .project-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .contact a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mon Portfolio "C'est hamza"</h1>
+    <header>
+        <h1>Hamza Bensouda</h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>
+            Bonjour, je suis Hamza, Data Scientist et actuellement Data Analyst chez ENGIE Green. Passionné par les données, 
+            j'aide à transformer des informations complexes en solutions concrètes pour les entreprises.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projets récents</h2>
+        <div class="project">
+            <div class="project-item">
+                <h3>Analyse des données SCADA</h3>
+                <p>Analyse et optimisation des performances des éoliennes grâce à Python et SQL.</p>
+            </div>
+            <div class="project-item">
+                <h3>Détection d'anomalies</h3>
+                <p>Développement d'un modèle de machine learning pour détecter des anomalies dans les courbes de puissance.</p>
+            </div>
+            <div class="project-item">
+                <h3>Visualisation Power BI</h3>
+                <p>Création et automatisation de tableaux de bord pour le suivi des performances.</p>
+            </div>
+            <div class="project-item">
+                <h3>Processus ETL</h3>
+                <p>Mise en place de pipelines de données pour intégrer de nouvelles sources efficacement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>
+            Vous pouvez me joindre via : <br>
+            <a href="mailto:hamza.bensouda@example.com">hamza.bensouda@example.com</a>
+        </p>
+        <p>
+            Retrouvez-moi aussi sur : <br>
+            <a href="https://www.linkedin.com/in/hamza-bensouda" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2024 Hamza Bensouda - Tous droits réservés.
+    </footer>
 </body>
 </html>

@@ -1,135 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Hamza</title>
+    <title>Portfolio - Hamza Slama</title>
     <style>
-        /* Style général */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f9;
+            background-color: #f4f4f9;
             color: #333;
         }
         header {
-            background: #4CAF50;
+            background-color: #4CAF50;
             color: white;
-            padding: 20px 10px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.2rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
+        main {
+            margin: 20px;
         }
         section {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
-        h2 {
+        h1, h2 {
             color: #4CAF50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background: #333;
+            margin-top: 30px;
+            padding: 10px 0;
+            background-color: #333;
             color: white;
-            margin-top: 20px;
         }
-        .project {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .project-item {
-            flex: 1 1 calc(50% - 20px);
-            background: #f9f9f9;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .project-item img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .contact a {
+        a {
             color: #4CAF50;
             text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Hamza Bensouda</h1>
-        <nav>
-            <a href="#about">À propos</a>
-            <a href="#projects">Projets</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Hamza Slama</h1>
+        <p>Data Scientist | Data Analyst</p>
     </header>
+    <main>
+        <section>
+            <h2>À propos de moi</h2>
+            <p>
+                Data Scientist et Data Analyst avec une expertise en analyse de données, développement de modèles de machine learning, 
+                et création de tableaux de bord interactifs. Actuellement en alternance chez 8.2 France, 
+                je suis passionné par l'optimisation des performances grâce à la data.
+            </p>
+        </section>
+        <section>
+            <h2>Compétences</h2>
+            <ul>
+                <li><strong>Langages de programmation :</strong> Python, R, SQL, Julia</li>
+                <li><strong>Outils de visualisation :</strong> Power BI, Tableau</li>
+                <li><strong>Gestion de données :</strong> PostgreSQL, MySQL, Talend (ETL), Apache Airflow</li>
+                <li><strong>Modélisation :</strong> Machine Learning, Régression, Clustering</li>
+                <li><strong>Cloud :</strong> AWS, Microsoft Azure</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Expériences</h2>
+            <h3>Data Scientist (Alternance) - 8.2 France</h3>
+            <p>Octobre 2023 - Septembre 2024</p>
+            <ul>
+                <li>Analyse des données SCADA en Python et SQL pour optimiser les performances des éoliennes.</li>
+                <li>Développement d’un modèle Machine Learning pour détecter les anomalies dans les courbes de puissance.</li>
+                <li>Création de tableaux de bord et reporting automatisé avec Power BI.</li>
+                <li>Mise en place de processus ETL pour l'intégration de nouvelles données.</li>
+            </ul>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>
-            Bonjour, je suis Hamza, Data Scientist et actuellement Data Analyst chez ENGIE Green. Passionné par les données, 
-            j'aide à transformer des informations complexes en solutions concrètes pour les entreprises.
-        </p>
-    </section>
+            <h3>Data Scientist (Stage) - INRAE Occitanie</h3>
+            <p>Janvier 2023 - Juin 2023</p>
+            <ul>
+                <li>Analyse des données météorologiques d’EDF avec Python.</li>
+                <li>Développement d’un modèle de prévision des impacts climatiques sur les centrales nucléaires.</li>
+                <li>Gestion et extraction de données avec PostgreSQL.</li>
+            </ul>
 
-    <section id="projects">
-        <h2>Projets récents</h2>
-        <div class="project">
-            <div class="project-item">
-                <h3>Analyse des données SCADA</h3>
-                <p>Analyse et optimisation des performances des éoliennes grâce à Python et SQL.</p>
-            </div>
-            <div class="project-item">
-                <h3>Détection d'anomalies</h3>
-                <p>Développement d'un modèle de machine learning pour détecter des anomalies dans les courbes de puissance.</p>
-            </div>
-            <div class="project-item">
-                <h3>Visualisation Power BI</h3>
-                <p>Création et automatisation de tableaux de bord pour le suivi des performances.</p>
-            </div>
-            <div class="project-item">
-                <h3>Processus ETL</h3>
-                <p>Mise en place de pipelines de données pour intégrer de nouvelles sources efficacement.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <p>
-            Vous pouvez me joindre via : <br>
-            <a href="mailto:hamza.bensouda@example.com">hamza.bensouda@example.com</a>
-        </p>
-        <p>
-            Retrouvez-moi aussi sur : <br>
-            <a href="https://www.linkedin.com/in/hamza-bensouda" target="_blank">LinkedIn</a>
-        </p>
-    </section>
-
+            <h3>Data Analyst (Stage) - SMART AUTO</h3>
+            <p>Juin 2022 - Août 2022</p>
+            <ul>
+                <li>Création de visualisations interactives avec Power BI pour faciliter la prise de décision.</li>
+                <li>Transformation de données avec Talend.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Formations</h2>
+            <ul>
+                <li><strong>Master en Statistiques pour l'Information et l'Aide à la Décision</strong> (IAE de Montpellier) | 2023-2024</li>
+                <li><strong>Master en Statistiques et Sciences des Données</strong> (Université de Montpellier) | 2022-2024</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <ul>
+                <li><strong>Téléphone :</strong> (+33) 07.74.86.16.99</li>
+                <li><strong>Email :</strong> hamzaslama101@gmail.com</li>
+                <li><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/hamza-slama-LinkedIn">hamza-slama-LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        &copy; 2024 Hamza Bensouda - Tous droits réservés.
+        <p>© 2024 Hamza Slama - Tous droits réservés</p>
     </footer>
 </body>
 </html>

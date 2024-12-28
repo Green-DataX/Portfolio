@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-    <img src="engie_green.png" alt="Engie Green Logo" style="height: 80px; margin-bottom: 20px;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamza Slama - Ingénieur Data Analyst</title>
@@ -68,6 +66,25 @@
             background-color: #333;
             color: white;
         }
+        .contact-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact-section button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-section button:hover {
+            background-color: #0056b3;
+        }
         a {
             color: #007BFF;
             text-decoration: none;
@@ -83,89 +100,18 @@
         <p>Ingénieur Data Analyst & Mesures PV - Engie Green</p>
     </header>
     <main>
+        <!-- Autres sections (À propos, Compétences, etc.) -->
         <section>
-            <h2>À propos de moi</h2>
-            <p>
-                Ingénieur Data Analyst passionné par les énergies renouvelables et les solutions basées sur la donnée, 
-                avec une expertise dans l'analyse des performances photovoltaïques, l'optimisation des processus, 
-                et le développement d'outils de visualisation interactifs.
-            </p>
-        </section>
-        <section>
-            <h2>Compétences</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Analyse & Visualisation</h3>
-                    <ul>
-                        <li>Python, R, SQL</li>
-                        <li>Power BI, Tableau</li>
-                        <li>Analyse SCADA</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Gestion de Données</h3>
-                    <ul>
-                        <li>PostgreSQL, MySQL</li>
-                        <li>ETL : Talend, Apache Airflow</li>
-                        <li>Cloud : AWS, Azure</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Modélisation</h3>
-                    <ul>
-                        <li>Machine Learning</li>
-                        <li>Régression, Clustering</li>
-                        <li>XGBoost, Scikit-Learn</li>
-                    </ul>
-                </div>
+            <h2>Contactez-moi</h2>
+            <div class="contact-section">
+                <p>Vous avez des questions ou souhaitez collaborer ? N'hésitez pas à me contacter.</p>
+                <ul>
+                    <li><strong>Téléphone :</strong> (+33) 07.74.86.16.99</li>
+                    <li><strong>Email :</strong> <a href="mailto:hamzaslama101@gmail.com">hamzaslama101@gmail.com</a></li>
+                    <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/hamza-slama-684546211/">linkedin.com/in/hamza-slama</a></li>
+                </ul>
+                <button onclick="window.location.href='mailto:hamzaslama101@gmail.com'">Envoyez-moi un Email</button>
             </div>
-        </section>
-        <section>
-            <h2>Expériences</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <h3>Ingénieur Data Analyst & Mesure PV</h3>
-                    <p><strong>Engie Green</strong> | Décembre 2024 - Présent</p>
-                    <ul>
-                        <li>Analyse des données photovoltaïques pour optimiser les performances.</li>
-                        <li>Création de tableaux de bord dynamiques pour le suivi des indicateurs clés.</li>
-                        <li>Intégration et transformation de données issues de multiples sources.</li>
-                    </ul>
-                </div>
-                <div class="experience-card">
-                    <h3>Data Scientist (Alternance)</h3>
-                    <p><strong>8.2 France</strong> | Octobre 2023 - Septembre 2024</p>
-                    <ul>
-                        <li>Analyse des données SCADA en Python et SQL.</li>
-                        <li>Développement d'un modèle ML pour détecter les anomalies des éoliennes.</li>
-                        <li>Mise en place de processus ETL pour des pipelines de données robustes.</li>
-                    </ul>
-                </div>
-                <div class="experience-card">
-                    <h3>Data Scientist (Stage)</h3>
-                    <p><strong>INRAE Occitanie</strong> | Janvier 2023 - Juin 2023</p>
-                    <ul>
-                        <li>Développement d’un modèle prévisionnel pour évaluer les impacts climatiques.</li>
-                        <li>Gestion des données EDF avec PostgreSQL.</li>
-                        <li>Utilisation de Julia et Python pour des analyses avancées.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Formations</h2>
-            <ul>
-                <li><strong>Master en Statistiques pour l'Information et l'Aide à la Décision</strong> (IAE Montpellier) | 2023-2024</li>
-                <li><strong>Master en Statistiques et Sciences des Données</strong> (Université de Montpellier) | 2022-2024</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <ul>
-                <li><strong>Téléphone :</strong> (+33) 07.74.86.16.99</li>
-                <li><strong>Email :</strong> <a href="mailto:hamzaslama101@gmail.com">hamzaslama101@gmail.com</a></li>
-                <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/hamza-slama-684546211/">linkedin.com/in/hamza-slama</a></li>
-            </ul>
         </section>
     </main>
     <footer>

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamza Slama - Ingénieur Data Analyst</title>
+    <title>Hamza Slama - Portfolio</title>
     <style>
+        /* Style général */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -15,36 +16,34 @@
         header {
             background-color: #007BFF;
             color: white;
-            padding: 60px 20px;
             text-align: center;
+            padding: 60px 20px;
             position: relative;
         }
         header h1 {
-            margin: 20px 0 10px;
+            margin-top: 100px;
             font-size: 2.5em;
         }
         header p {
-            margin: 0;
             font-size: 1.2em;
         }
         .profile-photo {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 3px solid white;
+            border: 5px solid white;
             position: absolute;
             top: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #f9f9f9;
+            background-color: white;
+            object-fit: cover;
         }
+
         main {
-            margin: 20px auto;
             max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
-        }
-        section {
-            margin-bottom: 30px;
         }
         h2 {
             color: #007BFF;
@@ -52,17 +51,18 @@
             border-bottom: 2px solid #007BFF;
             display: inline-block;
         }
-        .skills-grid, .experience-grid {
+        .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
-        .skill-card, .experience-card {
+        .skill-card {
             background-color: white;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .skill-card img {
             width: 50px;
@@ -79,11 +79,13 @@
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
         .contact-form input, .contact-form textarea, .contact-form button {
             padding: 10px;
             font-size: 1em;
-            margin-bottom: 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
             width: 100%;
@@ -98,32 +100,39 @@
             background-color: #0056b3;
         }
         .social-links {
+            margin-top: 20px;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 15px;
         }
         .social-links a {
-            color: white;
+            display: inline-block;
             background-color: #007BFF;
-            padding: 10px 15px;
-            border-radius: 5px;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 1.2em;
             text-decoration: none;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
         }
         .social-links a:hover {
             background-color: #0056b3;
         }
         footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px 0;
             background-color: #333;
             color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <header>
+        <!-- Assurez-vous que "profile.jpg" existe dans le même dossier -->
         <img src="profile.jpg" alt="Photo de profil" class="profile-photo">
         <h1>Hamza Slama</h1>
         <p>Ingénieur Data Analyst & Mesures PV - Engie Green</p>
@@ -132,9 +141,9 @@
         <section>
             <h2>À propos de moi</h2>
             <p>
-                Ingénieur Data Analyst passionné par les énergies renouvelables et les solutions basées sur la donnée, 
-                avec une expertise dans l'analyse des performances photovoltaïques, l'optimisation des processus, 
-                et le développement d'outils de visualisation interactifs.
+                Je suis un ingénieur Data Analyst passionné par les énergies renouvelables et l'analyse des données. 
+                Mon expertise inclut l'optimisation des performances photovoltaïques et la création d'outils 
+                interactifs pour aider à la prise de décision.
             </p>
         </section>
         <section>
@@ -142,30 +151,18 @@
             <div class="skills-grid">
                 <div class="skill-card">
                     <img src="python-logo.png" alt="Python">
-                    <h3>Analyse & Visualisation</h3>
-                    <ul>
-                        <li>Python, R, SQL</li>
-                        <li>Power BI, Tableau</li>
-                        <li>Analyse SCADA</li>
-                    </ul>
+                    <h3>Python</h3>
+                    <p>Analyse et visualisation des données</p>
                 </div>
                 <div class="skill-card">
                     <img src="database-logo.png" alt="Database">
-                    <h3>Gestion de Données</h3>
-                    <ul>
-                        <li>PostgreSQL, MySQL</li>
-                        <li>ETL : Talend, Apache Airflow</li>
-                        <li>Cloud : AWS, Azure</li>
-                    </ul>
+                    <h3>Gestion des Données</h3>
+                    <p>SQL, PostgreSQL, ETL</p>
                 </div>
                 <div class="skill-card">
                     <img src="ml-logo.png" alt="Machine Learning">
                     <h3>Modélisation</h3>
-                    <ul>
-                        <li>Machine Learning</li>
-                        <li>Régression, Clustering</li>
-                        <li>XGBoost, Scikit-Learn</li>
-                    </ul>
+                    <p>Machine Learning, Scikit-Learn</p>
                 </div>
             </div>
         </section>
@@ -178,9 +175,9 @@
                 <button type="submit">Envoyer</button>
             </form>
             <div class="social-links">
-                <a href="mailto:hamzaslama101@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/hamza-slama-684546211/">LinkedIn</a>
-                <a href="https://github.com/votre-profil">GitHub</a>
+                <a href="mailto:hamzaslama101@gmail.com" title="Email">&#9993;</a>
+                <a href="https://www.linkedin.com/in/hamza-slama-684546211/" title="LinkedIn">&#x1F465;</a>
+                <a href="https://github.com/votre-profil" title="GitHub">&#x1F5A5;</a>
             </div>
         </section>
     </main>
